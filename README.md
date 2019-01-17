@@ -1,5 +1,5 @@
 
-# Introduction to derivatives
+# Introduction to Derivatives
 
 ## Introduction
 
