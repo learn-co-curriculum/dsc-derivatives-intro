@@ -3,7 +3,7 @@
 
 ## Introduction
 
-As you finished the linear regression section, you now get the basic notion of a mathematical *functions*. We estimated our parameters, so imagine that we used number of bedrooms as a predictor and house rental price as the target variable, we can formulate this as follows:
+As you finished the linear regression section, you now get the basic notion of mathematical *functions*. We estimated our parameters, so imagine that we used number of bedrooms as a predictor and house rental price as the target variable, we can formulate this as follows:
 
 $$\text{price} = f(\text{number of bedrooms})$$ or, alternatively
 
@@ -76,7 +76,7 @@ plt.show()
 ![png](index_files/index_15_0.png)
 
 
-The graph above helps us see how distance changes in relation to time, or in other words speed.  So here, when we ask about **rate of change** (which is the core concept behind derivatives), we're basically asking how fast our is jogger traveling!
+The graph above helps us see how distance changes in relation to time, or in other words speed.  So here, when we ask about the **rate of change** (which is the core concept behind derivatives), we're basically asking how fast our is jogger traveling!
 
 ## Calculating the rate of change
 
@@ -86,7 +86,7 @@ To calculate the miles per hour we can see where a person is at a given time, th
 > * Then, let one hour elapse and mark down the distance at that next hour.  
 > * Finally, divide the difference in the distances by the elapsed time.  
 
-In the below graph, we begin to calculate the speed at the first hour. We used matplotlib, which you learned about before, to do this.
+In the below graph, we begin to calculate the speed at the first hour.
 
 
 ```python
@@ -117,7 +117,7 @@ plt.show()
 
 We calculate our jogger's speed by seeing were he starts at hour one and ends at hour two.  Our jogger went from mile numbers six to twelve -- indicated by the orange line, so miles per hour is:
 
- $$ \frac{\text{miles}}{\text{hour}} = \frac {\text{end distance - start distance}}{\text{end time - start time}} = \frac {12 - 6}{2 - 1} = 3$$
+ $$ \frac{\text{miles}}{\text{hour}} = \frac {\text{end distance - start distance}}{\text{end time - start time}} = \frac {12 - 6}{2 - 1} = 6$$
 
 Miles per hour is just one example of rate of change. Anytime we come across the word *per*, we know this is a form of rate of change.  All forms of **rate of change** are calculated the same way: the change in the value on our $y$-axis divided by the change in the value on our $x$-axis. 
 
@@ -132,9 +132,9 @@ Generally, we can say that the derivative of a straight line is equal to the "ri
 
 Just like in our example, we saw: 
 
-* miles per hour =  $\dfrac{\text{distance}_2 - \text{distance}_1}{\text{time}_2 - \text{time}_1} = \dfrac{12 - 6}{2 - 1} = \dfrac{6}{1} = 3$ mph
+* miles per hour =  $\dfrac{\text{distance}_2 - \text{distance}_1}{\text{time}_2 - \text{time}_1} = \dfrac{12 - 6}{2 - 1} = \dfrac{6}{1} = 6$ mph
 
-Derivatives are a specific kind of rate of change -- the rate of change of a function **at a given point**.  For a linear function as we work with here, we calculate them through rise over run, or the change in $y$ divided by the change in $x$, expressed $\dfrac{\Delta y}{\Delta x}$.  The rest of this lesson, will simply be introducing more math terms and symbols for expressing this same concept.  
+Derivatives are a specific kind of rate of change -- the rate of change of a function **at a given point**.  For a linear function as we work with here, we calculate them through rise over run, or the change in $y$ divided by the change in $x$, expressed $\dfrac{\Delta y}{\Delta x}$.  The rest of this lesson will simply be introducing more math terms and symbols for expressing this same concept.  
 
 > Stick with us, fully understanding these will pay off when we take the derivative of more complex functions.
 
@@ -304,7 +304,7 @@ plt.show()
 
 ## Summary 
 
-In this lesson, we saw that the derivative is the change in output per a change in input.  In the case of our jogger, the input was time and the output was distance traveled.  We learned that the derivative is the change in the runner's distance traveled divided by the amount of time passed.
+In this lesson, we saw that the derivative is the change in output per change in input.  In the case of our jogger, the input was time and the output was the distance traveled.  We learned that the derivative is the change in the runner's distance traveled divided by the amount of time passed.
 
 Graphically, we see that the derivative is simply the rise over run or change in $x$ divided by change in $y$ or:
 
