@@ -3,7 +3,8 @@
 
 ## Introduction
 
-As you finished the linear regression section, you now get the basic notion of mathematical *functions*. We estimated our parameters, so imagine that we used number of bedrooms as a predictor and house rental price as the target variable, we can formulate this as follows:
+As you finished the linear regression section, you now get the basic notion of mathematical functions. We estimated our parameters, so imagine that we used the number of bedrooms as a predictor and house rental price as the target variable, we can formulate this as follows:
+
 
 $$\text{price} = f(\text{number of bedrooms})$$ or, alternatively
 
@@ -13,7 +14,7 @@ Now let's say the price of the apartment is set in a very simplified way, and th
 
 $$\text{price} = 500 * \text{number of bedrooms}$$ or $$y = f(x) = 500 * x = 500x$$
 
-Note that there is no intercept here! Now, we want to dive deeper in how the rental price changes as the number of bedrooms changes. This is what derivatives are all about!
+Note that there is no intercept here! Now, we want to dive deeper into how the rental price changes as the number of bedrooms changes. This is what derivatives are all about!
 
 ## Objectives
 
@@ -80,9 +81,9 @@ The graph above helps us see how distance changes in relation to time, or in oth
 
 ## Calculating the rate of change
 
-To calculate the miles per hour we can see where a person is at a given time, then wait an hour and to see how far he traveled.  Or we can wait two hours and divide distance traveled by two.  Generally, our technique is to divide number of miles traveled by the number of hours passed.  In this specific example we'll imagine doing the following to calculate the speed at hour 1.
+To calculate the miles per hour we can see where a person is at a given time, then wait an hour and to see how far he traveled.  Or we can wait two hours and divide distance traveled by two.  Generally, our technique is to divide number of miles traveled by the number of hours passed.  In this specific example, we'll imagine doing the following to calculate the speed at hour 1.
 
-> * Start a stop watch after one hour and note the distance at that hour
+> * Start a stopwatch after one hour and note the distance at that hour
 > * Then, let one hour elapse and mark down the distance at that next hour.  
 > * Finally, divide the difference in the distances by the elapsed time.  
 
@@ -115,11 +116,11 @@ plt.show()
 ![png](index_files/index_19_0.png)
 
 
-We calculate our jogger's speed by seeing were he starts at hour one and ends at hour two.  Our jogger went from mile numbers six to twelve -- indicated by the orange line, so miles per hour is:
+We calculate our jogger's speed by seeing where he starts at hour one and ends at hour two.  Our jogger went from mile numbers six to twelve -- indicated by the orange line, so miles per hour is:
 
  $$ \frac{\text{miles}}{\text{hour}} = \frac {\text{end distance - start distance}}{\text{end time - start time}} = \frac {12 - 6}{2 - 1} = 6$$
 
-Miles per hour is just one example of rate of change. Anytime we come across the word *per*, we know this is a form of rate of change.  All forms of **rate of change** are calculated the same way: the change in the value on our $y$-axis divided by the change in the value on our $x$-axis. 
+Miles per hour is just one example of the rate of change. Anytime we come across the word *per*, we know this is a form of rate of change.  All forms of **rate of change** are calculated the same way: the change in the value on our $y$-axis divided by the change in the value on our $x$-axis. 
 
 * Another way of expressing **change in $y$** is:  
    * $y_2 - y_1$ or $\Delta y$, read delta y 
