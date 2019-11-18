@@ -3,8 +3,7 @@
 
 ## Introduction
 
-As you finished the linear regression section, you now get the basic notion of mathematical functions. We estimated our parameters, so imagine that we used the number of bedrooms as a predictor and house rental price as the target variable, we can formulate this as follows:
-
+In the linear regression section, you learned about the basic notion of mathematical functions. Now, imagine that you used the number of bedrooms as a predictor and house rental price as the target variable, you can formulate this as follows:
 
 $$\text{price} = f(\text{number of bedrooms})$$ or, alternatively
 
@@ -20,8 +19,9 @@ Note that there is no intercept here! Now, we want to dive deeper into how the r
 
 You will be able to:
 
-* Understand that derivatives are the instantaneous rate of change of a function
-* Understand how to calculate a derivative of a straight line
+* Describe what a derivative means in the context of a real-world example
+* Calculate the derivative of a linear function
+* Define derivatives as the instantaneous rate of change of a function
 
 ## Let's look at our function
 
@@ -50,7 +50,7 @@ plt.show();
 ```
 
 
-![png](index_files/index_10_0.png)
+![png](index_files/index_3_0.png)
 
 
 As you can see, we get a straight line here. 
@@ -59,7 +59,7 @@ In this lesson, we'll introduce the concept of **derivatives**. Derivatives are 
 
 ## Understanding the rate of change
 
-To introduce derivatives, let's introduce a new example. Say that we want a function that represents a person taking a jog. We'll represent this by drawing the following straight line.
+To introduce derivatives, let's introduce a new example, and we'll go back to the housing example later on. Say that we want a function that represents a person taking a jog. We'll represent this by drawing the following straight line.
 
 
 ```python
@@ -74,7 +74,7 @@ plt.show()
 ```
 
 
-![png](index_files/index_15_0.png)
+![png](index_files/index_8_0.png)
 
 
 The graph above helps us see how distance changes in relation to time, or in other words speed.  So here, when we ask about the **rate of change** (which is the core concept behind derivatives), we're basically asking how fast our is jogger traveling!
@@ -113,7 +113,7 @@ plt.show()
 ```
 
 
-![png](index_files/index_19_0.png)
+![png](index_files/index_12_0.png)
 
 
 We calculate our jogger's speed by seeing where he starts at hour one and ends at hour two.  Our jogger went from mile numbers six to twelve -- indicated by the orange line, so miles per hour is:
@@ -123,11 +123,11 @@ We calculate our jogger's speed by seeing where he starts at hour one and ends a
 Miles per hour is just one example of the rate of change. Anytime we come across the word *per*, we know this is a form of rate of change.  All forms of **rate of change** are calculated the same way: the change in the value on our $y$-axis divided by the change in the value on our $x$-axis. 
 
 * Another way of expressing **change in $y$** is:  
-   * $y_2 - y_1$ or $\Delta y$, read delta y 
+   * $y_2 - y_1$ or $\Delta y$, read "delta y" 
 * Likewise, another way of expressing **change in $x$** is:  
-   * $x_2 - x_1$ or $\Delta x$, read delta x
+   * $x_2 - x_1$ or $\Delta x$, read "delta x"
 
-Generally, we can say that the derivative of a straight line is equal to the "rise over the "run": 
+Generally, we can say that the derivative of a straight line is equal to the "rise over the run": 
 
 * rate of change $= \dfrac{\text{rise}}{\text{run}} = \dfrac{\Delta y}{\Delta x} = \dfrac{y_2 - y_1}{x_2 - x_1}$
 
@@ -207,7 +207,7 @@ plt.show()
 ```
 
 
-![png](index_files/index_34_0.png)
+![png](index_files/index_27_0.png)
 
 
 > * To the left is a graph of $f(x) = 6x$ for different values of $x$  
@@ -268,7 +268,7 @@ plt.show();
 ```
 
 
-![png](index_files/index_40_0.png)
+![png](index_files/index_33_0.png)
 
 
 Using the definition of derivatives stated above, let's say $x=3$ and $\Delta x = 1$. Then:
@@ -300,7 +300,7 @@ plt.show()
 ```
 
 
-![png](index_files/index_42_0.png)
+![png](index_files/index_35_0.png)
 
 
 ## Summary 
