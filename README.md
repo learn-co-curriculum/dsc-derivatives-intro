@@ -1,4 +1,3 @@
-
 # Introduction to Derivatives
 
 ## Introduction
@@ -39,7 +38,6 @@ Using matplotlib, we can visualize this as:
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
-%matplotlib inline
 
 x = np.linspace(0, 8, 100)
 
@@ -50,7 +48,9 @@ plt.show();
 ```
 
 
+    
 ![png](index_files/index_3_0.png)
+    
 
 
 As you can see, we get a straight line here. 
@@ -63,8 +63,8 @@ To introduce derivatives, let's introduce a new example, and we'll go back to th
 
 
 ```python
-def jog(miles):
-    return 6*miles
+def jog(hours):
+    return 6*hours
 x = np.linspace(0, 3, 100)
 
 plt.plot(x, jog(x))
@@ -74,7 +74,9 @@ plt.show()
 ```
 
 
+    
 ![png](index_files/index_8_0.png)
+    
 
 
 The graph above helps us see how distance changes in relation to time, or in other words speed.  So here, when we ask about the **rate of change** (which is the core concept behind derivatives), we're basically asking how fast our is jogger traveling!
@@ -113,7 +115,9 @@ plt.show()
 ```
 
 
+    
 ![png](index_files/index_12_0.png)
+    
 
 
 We calculate our jogger's speed by seeing where he starts at hour one and ends at hour two.  Our jogger went from mile numbers six to twelve -- indicated by the orange line, so miles per hour is:
@@ -207,7 +211,9 @@ plt.show()
 ```
 
 
+    
 ![png](index_files/index_27_0.png)
+    
 
 
 > * To the left is a graph of $f(x) = 6x$ for different values of $x$  
@@ -268,7 +274,9 @@ plt.show();
 ```
 
 
+    
 ![png](index_files/index_33_0.png)
+    
 
 
 Using the definition of derivatives stated above, let's say $x=3$ and $\Delta x = 1$. Then:
@@ -300,7 +308,9 @@ plt.show()
 ```
 
 
+    
 ![png](index_files/index_35_0.png)
+    
 
 
 ## Summary 
