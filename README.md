@@ -291,6 +291,7 @@ x = [0, 1, 2]
 x = np.linspace(0, 8, 100)
 
 fig, ax = plt.subplots(figsize=(10,4))
+ax.remove()
 
 # plot 1
 plt.subplot(121)
